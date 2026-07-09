@@ -78,8 +78,6 @@ const features = [
   },
 ];
 
-const categories = ['Education', 'Trading Tools', 'Asset Management', 'Web3 Services'];
-
 export default function FeaturesSection() {
   return (
     <section id="features" className="relative py-24 lg:py-32 overflow-hidden">
@@ -105,7 +103,7 @@ export default function FeaturesSection() {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <div
               key={feature.title}
               className={`group relative bg-card rounded-2xl border transition-all duration-300 hover:border-primary/50 ${
